@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="rerave.activities.MainActivity"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/MA_RecordInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="@string/recordStopped"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="@dimen/MainFontSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/MA_ButtonStartAudioRecord"
+        android:text="@string/start_audio_record"
+        android:background="@drawable/button_shape1"
+        android:textSize="@dimen/BigFontSize"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/MA_RecordInfo"
+        android:layout_alignParentStart="true" />
+
+    <!--<Button-->
+        <!--android:id="@+id/MA_ButtonStopAudioRecord"-->
+        <!--android:text="@string/stop_audio_record"-->
+        <!--android:onClick="onClick"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/MA_ButtonStartAudioRecord"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:id="@+id/MA_ButtonArchive"
+        android:text="@string/archives"
+        android:textSize="@dimen/BigFontSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/MA_ButtonCurrentBus"
+        android:text="@string/current_bus"
+        android:textSize="@dimen/BigFontSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/MA_ButtonArchive"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/MA_ButtonManualEnter"
+        android:text="@string/manual_enter"
+        android:textSize="@dimen/BigFontSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/MA_ButtonCurrentBus"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/MA_TextViewCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MA_ButtonStartAudioRecord"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/MainFontSize"
+        android:background="@drawable/button_shape1"
+        android:visibility="invisible"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/MA_TextViewCardOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/MainFontSize"
+        android:background="@drawable/button_shape1"
+        android:visibility="invisible"
+        android:padding="3dp"
+        android:layout_below="@+id/MA_TextViewCardNumber"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/MA_ButtonSettings"
+        android:clickable="true"
+        android:layout_width="224dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/avtobus_back"
+        android:layout_above="@id/MA_ButtonManualEnter"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorTransparent"
+        android:contentDescription="BUS" />
+
+
+</RelativeLayout>

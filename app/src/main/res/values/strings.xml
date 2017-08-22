@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">585 золотой</string>
+    <string name="start_audio_record">Начать считывание карт</string>
+    <string name="stop_audio_record">Закончить считывание карт</string>
+    <string name="download_staffers_list">Обновить список сотрудников с Портала</string>
+    <string name="open_staffers_list">Открыть список сотрудников (тест)</string>
+    <string name="upload_info_to_portal">Отправить информацию на Портал</string>
+    <string name="current_bus">Сотрудники в автобусе</string>
+    <string name="manual_enter">Ручной ввод</string>
+    <string name="recordStarted">Производится считывание карт</string>
+    <string name="recordStopped">Считывание карт остановлено</string>
+    <string name="archives">Архив поездок</string>
+
+
+    <string name="message_track_data_error_corrupted">The track 1 and track 2 data may be corrupted. Please swipe the card again!</string>
+    <string name="message_track1_data_error_corrupted">The track 1 data may be corrupted. Please swipe the card again!</string>
+    <string name="message_track2_data_error_corrupted">The track 2 data may be corrupted. Please swipe the card again!</string>
+    <string name="message_track_data_error_decrypted">The track data cannot be decrypted. Please swipe the card again!</string>
+    <string name="message_track_data_error_checksum">The track data contains checksum error. Please swipe the card again!</string>
+    <string name="message_track_data_error_ksn">The key serial number does not match with the settings.</string>
+    <string name="message_track_data_error_ec">The encryption counter is invalid.</string>
+
+
+</resources>
